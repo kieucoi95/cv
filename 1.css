@@ -1,0 +1,246 @@
+*{margin: 0; padding: 0;} 
+html, body {
+    font-family: 'Cabin', sans-serif !important;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.container {
+    position: relative;
+}
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url(images/home.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+
+    position: absolute;
+    top:35%;
+    left: 0;
+    z-index: 1;
+}
+.menuTop {
+    background-color: rgba(0,0,0,0.6);
+}
+
+nav {
+    padding: 0!important;
+    margin: 0!important;
+}
+li.nav-item {
+    margin: 0!important;
+}
+
+h3#hello{
+    color: aliceblue;
+    
+    font-weight: 600;
+    font-size: 2rem;
+}
+h1#name{
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+.home-overlay {
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100vh;
+    
+}
+a#download {
+    text-decoration: none;
+    display: inline-block;
+    
+    transform: translateZ(0);
+    
+    color: #fff;
+    padding: 1vh 2vh;
+    transition: 0.4s;
+    background-color: #50d07d;
+    
+    position: relative;
+}
+a#download:hover{
+    color: #50d07d;
+}
+a#download:before {
+    content: '';
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    transform-origin: 50%;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    transition-timing-function: cubic-bezier(0.94, 0.09, 0.36, 0.43);
+    z-index: -1;   
+}
+a#download:hover:before {
+    
+    transform: scaleX(1); 
+    transition: 0.4s;
+    /* z-index: 1; */
+    color: #50d07d;
+}
+.section-title {
+    margin-bottom: 60px;
+    position: relative;
+    text-align: center;
+}
+.section-title h4 {
+    border: 2px solid #50d07d;
+}
+.section-title:before {
+    border-top: 1px solid #b7b7b7;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.section-title h4 {
+    background: #fff none repeat scroll 0 0;
+    color: #363636;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 30px;
+    position: relative;
+    text-transform: uppercase;
+}
+.about {
+    margin-top: 1rem;
+}
+
+.avatar {
+    border: 1px #50d07d solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.info-icon {
+    background-color: #50d07d;
+    vertical-align: middle;
+    display: inline-block;
+    height: 57px;
+    width: 57px;
+    margin-right: 1rem;
+}
+.info {
+    margin-bottom: 1rem;
+}
+.info-icon i {
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+}
+.info-text {
+    font-size: 17px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    
+}
+ .progress-bar {
+    position: relative;
+    width: 85%;
+    z-index: 0;
+}
+ .progress-bar::before {
+    background: #ddd;
+    border-radius: 25px 0 50px 25px;
+    content: '';
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    z-index: -1;
+}
+ .progress-bar .bar { 
+    background: #50d07d;
+    border-radius: 25px 0 50px 25px;
+    display: block;
+    height: 10px;
+    position: absolute;
+    top: 3px;
+    z-index: 1;
+} 
+.row {
+    margin-bottom: 1rem;
+}
+.contact {
+    background-color: #50d07d;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    float: left;
+    font-size: 20px;
+    border-radius: 2px;
+    margin-right: 1rem;
+}
+ul li a{
+    color: aliceblue!important;
+    padding: 0 4vh;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.4s;
+    position: relative;
+    
+    
+}
+ul:hover li a {
+    /* opacity: .2; */
+    /* filter: blur(5px); */
+}
+ul li a:hover {   
+    opacity: 1;
+    filter: blur(0);
+}
+ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #50d07d;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    z-index: -1;
+}
+ul li a:hover:before {
+    transform-origin: left;
+    transform: scaleX(1); 
+    transition: 0.4s;
+}
+.menu {
+    height: 100%;
+    width: 100%;
+    background: #50d07d;
+}
+.about {
+    padding: 4rem 0;
+}
+.skills {
+    padding: 4rem 0;
+}
+.contacts {
+    padding: 4rem 0;
+}
